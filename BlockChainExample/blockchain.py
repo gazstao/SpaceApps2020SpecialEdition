@@ -9,7 +9,7 @@ class Blockchain:
         self.set_genesis_block()
 
     def set_genesis_block(self):
-        data = 'Hello, World!'
+        data = 'SpaceApps 2020 Special Edition Challenge - CWB19 Genesis Block'
         timestamp = datetime.utcnow().timestamp()
         prev_hash = 0
         index = 0
@@ -33,7 +33,7 @@ class Blockchain:
         return self.blocks[-1]
 
     def is_hash_valid(self, hash):
-        return hash.startswith('6a57a0')
+        return hash.startswith('9999')
 
     def add_new_block(self, data):
         index = len(self.blocks)
